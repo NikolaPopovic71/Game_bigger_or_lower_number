@@ -20,3 +20,5 @@ The game is written in:
 3. JavaScript code (of course, HTML and CSS as well)
 
 - Python code you can find here [Python code](The_game_bigger_or_lower_number.py)
+- PyScript folder with `.py` `.html` `.css` and `.js` files you can find here [PyScript code](PyScript_lower_or_bigger_number_one_page)
+- JavaScript folder with `.html` `.css` and `.js` files you can find here [JavaScript code]
