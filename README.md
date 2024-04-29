@@ -24,3 +24,25 @@ The game is written in:
 > [!TIP]
 > the game you should start from the `index.html` file via `Live Server` if you use VSCode 
 - JavaScript folder with `.html` `.css` and `.js` files you can find here [JavaScript code](JavaScript_lower_or_bigger_number_one_page)
+
+---
+
+#### Please, find below what the game looks like in different programs
+
+##### Python code
+
+![Starting_game](https://github.com/NikolaPopovic71/Game_bigger_or_lower_number/assets/145991792/c9052f54-c0c9-472c-9af1-ba21bbd0d445)
+![End_game](https://github.com/NikolaPopovic71/Game_bigger_or_lower_number/assets/145991792/ee720b30-49d4-46a1-b3fe-0e17cb53303b)
+
+##### PyScript code
+
+![Starting_PyScript_game](https://github.com/NikolaPopovic71/Game_bigger_or_lower_number/assets/145991792/ea76c1f8-1c80-49fa-bf5b-582d343fe27d)
+
+##### PyScript and JavaScript code
+
+![Starting_PyScript_and_JS_game_toggle_changed](https://github.com/NikolaPopovic71/Game_bigger_or_lower_number/assets/145991792/219a1959-c806-4f89-b814-c6998e5d0838)
+![End_PyScript_and_JS_game](https://github.com/NikolaPopovic71/Game_bigger_or_lower_number/assets/145991792/05c9834b-6c4c-43d1-9402-f9cc4fcec078)
+![End_PyScript_and_JS_game_light_mode](https://github.com/NikolaPopovic71/Game_bigger_or_lower_number/assets/145991792/868f6462-2d19-440f-a743-418247dface6)
+
+
+
