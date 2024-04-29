@@ -21,4 +21,6 @@ The game is written in:
 
 - Python code you can find here [Python code](The_game_bigger_or_lower_number.py)
 - PyScript folder with `.py` `.html` `.css` and `.js` files you can find here [PyScript code](PyScript_lower_or_bigger_number_one_page)
-- JavaScript folder with `.html` `.css` and `.js` files you can find here [JavaScript code]
+> [!TIP]
+> the game you should start from the `index.html` file via `Live Server` if you use VSCode 
+- JavaScript folder with `.html` `.css` and `.js` files you can find here [JavaScript code](JavaScript_lower_or_bigger_number_one_page)
