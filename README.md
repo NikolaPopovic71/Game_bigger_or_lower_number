@@ -9,6 +9,8 @@
 > [!NOTE]
 > - **`sn`** variable name stands for the starting number
 > - **`c`** variable name stands for the counter (counter of hit numbers)
+> - **`l1`** variable name refers to Label in Tkinter for the starting number
+> - **`l2`** variable name refers to Label in Tkinter for the text when the game ends (when the player chooses the wrong number)
 
 The game is written in:
 1. Python (using OOP - classes and Tkinter as GUI)
@@ -17,4 +19,4 @@ The game is written in:
 > PyScript is a framework that enables users to create interactive web applications by writing Python code that runs in the browser, integrating seamlessly with HTML and JavaScript.
 3. JavaScript code (of course, HTML and CSS as well)
 
-- Python code you can find here [Python code]
+- Python code you can find here [Python code](The_game_bigger_or_lower_number.py)
