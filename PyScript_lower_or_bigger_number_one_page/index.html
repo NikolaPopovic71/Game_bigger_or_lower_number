@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+
+    <py-script src="./game.py"></py-script>
+
+    <div class="toggle-container">
+        <label class="switch">
+            <label for="toggle" class="visually-hidden">Toggle Night and Day Mode</label>
+            <input type="checkbox" id="toggle" name="mode">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <!-- Game controls and message display -->
+<!-- Game Controls Box -->
+    <div id="game_controls" class="box">
+        <button id="bigger" onclick="bigger()">Bigger</button>
+        <label id="number_display">5</label>
+        <button id="lower" onclick="lower()">Lower</button>
+        <label id="message_display"></label>
+    </div>
+
+        <!-- Final Message Box -->
+    <div id="final_message" class="box">
+        <p id="end_message"></p>
+        <button id="reset_game" onclick="resetGame()">Reset Game</button>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

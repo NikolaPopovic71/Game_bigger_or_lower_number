@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-light-theme-color: #fdf8a5;
+  --background-dark-theme-color: #16262c;
+  --color-light-theme: #16262c;
+  --color-dark-theme: #fdf8a5;
+
+  --toggle-background-light-theme-color: #16262c;
+  --toggle-background-dark-theme-color: #fdf8a5;
+  --toggle-circle-background-light-theme-color: #fdf8a5;
+  --toggle-circle-background-dark-theme-color: #16262c;
+
+  --button-bigger-color-light-theme: #fdf8a5;
+  --button-bigger-color-dark-theme: #062c35;
+  --button-bigger-background-color-light-theme: #062c35;
+  --button-bigger-background-color-dark-theme: #fdf8a5;
+
+  --button-lower-color-light-theme: #062c35;
+  --button-lower-color-dark-theme: #062c35;
+  --button-lower-background-color-light-theme: #f8643c;
+  --button-lower-background-color-dark-theme: #f8643c;
+
+  --button-reset-color-light-theme: #fff;
+  --button-reset-background-color-light-theme: #177b4d;
+  --button-reset-hover-color-light-theme: #177b4d;
+  --button-reset-hover-background-color-light-theme: #fff;
+}
+
+body {
+  transition: background-color 0.5s ease;
+  background-color: var(--background-light-theme-color);
+  color: var(--color-light-theme);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.switch {
+  display: inline-block;
+  height: 34px;
+  width: 60px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--toggle-background-light-theme-color);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--toggle-circle-background-light-theme-color);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(
+    --toggle-background-dark-theme-color
+  ); /* Dark mode background color */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.night-mode {
+  background-color: var(
+    --background-dark-theme-color
+  ); /* Dark mode background */
+  color: var(--color-dark-theme); /* Dark mode text */
+  #bigger {
+    background: var(--button-bigger-background-color-dark-theme);
+    color: var(--button-bigger-color-dark-theme);
+  }
+  #lower {
+    background: var(--button-lower-background-color-dark-theme);
+    color: var(--button-lower-color-dark-theme);
+  }
+  .slider:before {
+    background-color: var(--toggle-circle-background-dark-theme-color);
+  }
+}
+
+/* This was added to hide the label, which had to be added 
+so that web application be more accessible and user-friendly*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap; /* added to ensure the text does not wrap */
+}
+
+.box {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9); /* X-offset, Y-offset, Blur Radius, Color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content; /* Adjust width as needed */
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#number_display {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 5px;
+}
+
+#message_display {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+#bigger {
+  min-width: 130px;
+  height: 40px;
+  color: var(--button-bigger-color-light-theme);
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid var(--button-bigger-background-color-light-theme);
+  background: var(--button-bigger-background-color-light-theme);
+}
+
+#lower {
+  min-width: 130px;
+  height: 40px;
+  color: var(--button-lower-color-light-theme);
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid var(--button-lower-background-color-light-theme);
+  background: var(--button-lower-background-color-light-theme);
+}
+
+#final_message {
+  display: none; /* This will be toggled by your game logic */
+  text-align: center; /* Center align text */
+  flex-direction: column;
+  align-items: center;
+}
+
+#end_message {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#reset_game {
+  margin-top: 20px;
+  min-width: 130px;
+  height: 40px;
+  color: var(--button-reset-color-light-theme);
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid var(--button-reset-background-color-light-theme);
+  background: var(--button-reset-background-color-light-theme);
+}
+
+/*#reset_game:hover {
+    background: var(--button-reset-hover-background-color-light-theme);
+    color: var(--button-reset-hover-color-light-theme);
+}*/
