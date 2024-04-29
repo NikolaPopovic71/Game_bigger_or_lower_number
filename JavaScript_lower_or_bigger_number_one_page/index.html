@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="toggle-container">
+      <label class="switch">
+        <label for="toggle" class="visually-hidden"
+          >Toggle Night and Day Mode</label
+        >
+        <input type="checkbox" id="toggle" name="mode" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <!-- Game controls and message display -->
+    <!-- Game Controls Box -->
+    <div id="game_controls" class="box">
+      <button id="bigger">Bigger</button>
+      <label id="number_display">5</label>
+      <button id="lower">Lower</button>
+      <label id="message_display"></label>
+    </div>
+
+    <!-- Final Message Box -->
+    <div id="final_message" class="box">
+      <p id="end_message"></p>
+      <button id="reset_game">Reset Game</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
